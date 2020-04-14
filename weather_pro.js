@@ -7,7 +7,7 @@ let config = {
     aqicn_api: "40abac26e7ce9de6be9d57b09cbc4ab62e54d21f", //从http://aqicn.org/data-platform/token/#/ 上申请key填入即可
     huweather_apiKey: "0d932b231c5a4da592b3ba44b98edeb3", //和风天气APIkey,可自行前往 https://dev.heweather.com/ 进行获取
     lat_lon: "32.185994, 115.669563", //请填写经纬度,直接从谷歌地图中获取即可
-    lang: "en", //语言,随意切换为您想要的语言哦(zh/zh-tw/ja/en/fr/...)
+    lang: "zh", //语言,随意切换为您想要的语言哦(zh/zh-tw/ja/en/fr/...)
     log: 2, //调试日志,0为不开启,1为开启,2为开启精简日志
     timeout: 0, //超时时间,单位毫秒(1000毫秒=1秒),一般不推荐修改[为0则不限制超时时间]
     show: {

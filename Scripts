@@ -10,3 +10,17 @@ http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22vid
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
 cron "0 9,18 * * 1-5" script-path=https://raw.githubusercontent.com/yichahucha/surge/master/check_in.js
+# 每日.每周天气
+cron "0 8-20/4 * * *" nzw9314/sazs34/task/weather_pro.js
+
+# 每日.48小时天气
+cron "0 8-20/4 * * *" nzw9314/sazs34/task/weather_pro2.js
+
+# 48小时天气
+cron "0 8 * * *" nzw9314/sazs34/task/weather_hour.js
+
+# 每周天气
+cron "0 8 * * *" nzw9314/sazs34/task/weather_week.js
+
+# 降雨提醒
+cron "0 0-20/2 * * *" nzw9314/Task/minute_forecast.js
